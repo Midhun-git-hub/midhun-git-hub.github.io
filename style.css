@@ -29,6 +29,26 @@
   color: rgb(235, 15, 15) !important;
 }
 
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: red;
+  transition: width .3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
 /* Skill Icons */
 .skill-icon {
   font-size: 24px;
