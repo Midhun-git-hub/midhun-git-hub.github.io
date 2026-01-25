@@ -6,12 +6,17 @@
 /* About Section */
 .about {
   width: 100%;
-  height: 100vh;
   background-color: black;
   padding: 20px;
 }
+.social_icons i {
+  color: white;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
 .social_icons a:hover i {
-    color: #de314c;
+  color: #de314c;
+  transform: scale(1.1);
 }
 /* Social Icons */
 
@@ -92,7 +97,7 @@ html, body {
     color: #de314c;
 }
 .custom-card {
-    background-color: #555555; 
+    background: linear-gradient(135deg, #1f1c2c, #2c2c54);
     border: 2px solid white;          
     border-radius: 15px;
     color: white;
@@ -101,32 +106,41 @@ html, body {
 }
 .custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px grey;
+    box-shadow: 0 12px 28px rgba(120, 80, 255, 0.45);
+    border-color: rgba(120, 80, 255, 0.6);
 }
 .about_s {
     background-color: #000000;
 }
 .about_s .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-    background-color: #6c757d;
-    color: white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease, background 0.35s ease;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
+
 .about_s .card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px white;
-    border: 2px solid white;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(56, 189, 248, 0.55);
+  border-color: rgba(56, 189, 248, 0.6);
 }
+
+
+/* Icon default */
 .about_s .card i {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    color: white;
+  transition: transform 0.4s ease, color 0.4s ease, filter 0.4s ease;
+  color: #60a5fa; /* soft blue default */
 }
+
+/* Hover glow effect */
 .about_s .card:hover i {
-    transform: scale(1.2);
-    color: black;
+  transform: scale(1.25);
+  color: #38bdf8;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.8));
 }
-.about_s .card {
-    border-radius: 12px;
-}
+
 /* Responsive Text Fix */
 @media (max-width: 768px) {
     h1 {
